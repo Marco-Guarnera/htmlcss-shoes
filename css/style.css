@@ -7,11 +7,19 @@
 
 /* Generics */
 a {
+    color: #000;
     text-decoration: none;
 }
 
 body {
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: "Rubik Mono One", sans-serif;
+}
+
+h2 {
+    color: #FF0;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 html {
@@ -45,10 +53,17 @@ ul {
     background-color: #FF0;
 }
 
+.full-page::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .content {
-    height: 500px;
-    width: 500px;
-    background-color: #FFF;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,6 +87,10 @@ ul {
     width: 50px;
     background-color: #FFF;
     border-radius: 50%;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .navbar a:hover {
@@ -90,4 +109,8 @@ ul {
 
 .flex {
     display: flex;
+}
+
+.txtcol-green {
+    color: #0F0;
 }
