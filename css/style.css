@@ -6,13 +6,80 @@
 }
 
 /* Generics */
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Rubik Mono One', sans-serif;
+}
+
+html {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.full-page {
+    height: 100vh;
+    position: relative;
+}
+
+#red {
+    background-color: #F00;
+}
+
+#green {
+    background-color: #0F0;
+}
+
+#yellow {
+    background-color: #FF0;
+}
+
+.content {
+    height: 500px;
+    width: 500px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.navbar {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+
+.navbar > ul {
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navbar a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.navbar a:hover {
+    scale: 1.1;
+}
+
+.navbar a:active {
+    scale: 1;
 }
 
 /* Utilities */
