@@ -1,3 +1,8 @@
+:root {
+    --green: #0F0;
+    --yellow: #FF0;
+}
+
 /* CSS Reset */
 * {
     box-sizing: border-box;
@@ -16,7 +21,7 @@ body {
 }
 
 h2 {
-    color: #FF0;
+    color: var(--yellow);
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
@@ -46,11 +51,11 @@ ul {
 }
 
 #green {
-    background-color: #0F0;
+    background-color: var(--green);
 }
 
 #yellow {
-    background-color: #FF0;
+    background-color: var(--yellow);
 }
 
 .full-page::before {
@@ -112,5 +117,5 @@ ul {
 }
 
 .txtcol-green {
-    color: #0F0;
+    color: var(--green);
 }
